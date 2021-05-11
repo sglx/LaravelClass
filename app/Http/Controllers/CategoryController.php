@@ -61,4 +61,15 @@ class CategoryController extends Controller
     {
         //
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\id  $category
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        return Category::destroy($id);
+    }
 }
